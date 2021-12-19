@@ -39,6 +39,7 @@ cd demo/platform/bootstrap
 terraform init
 terraform import module.terraform-state-s3-backend.aws_dynamodb_table.terraform_locks terraform-locks-nede-demo
 terraform import module.terraform-state-s3-backend.aws_s3_bucket.terraform-state terraform-state-nede-demo
+```
 
 ### Frontend application
 
