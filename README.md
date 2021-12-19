@@ -1,6 +1,6 @@
 # Demo
 
-Demonstrates the creation of AWS networking and a deployment strategies.
+Demonstrates the creation of AWS networking and deployment strategies.
 
 ## Setup
 
