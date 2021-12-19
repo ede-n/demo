@@ -10,7 +10,9 @@ Demonstrates the creation of AWS networking and deployment strategies.
 2. git cli
 3. aws cli
 
-### Required environment variables
+### Validate required tooling
+
+#### Aws cli
 
 Ensure that Aws profile is configured and validate by running 
 
