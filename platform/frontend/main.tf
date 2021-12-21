@@ -6,6 +6,7 @@ module "aws_network" {
 
   cidr_block = var.vpc_cidr
   stage      = var.stage
+  az_config = var.az_config
   long_name  = local.long_name
   additional_tags = {
     Owners = "DevOps"

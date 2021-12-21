@@ -27,6 +27,14 @@ variable "cidr_block" {
   description = "IPv4 CIDR to assign to the VPC"
 }
 
+variable "az_config" {
+  type = list(object({
+      az = string
+      private_subnets = list(string)
+      public_subnets = list(string)
+    }))
+}
+
 variable "instance_tenancy" {
   type        = string
   description = "A tenancy option for instances launched into VPC"
@@ -53,16 +61,4 @@ variable "additional_tags" {
   type        = map(string)
   default     = {}
   description = "Example `{'OrgUnit': 'Engineering'}`"
-}
-
-variable "default_security_group_deny_all" {
-  type        = bool
-  default     = true
-  description = "If true removes all ingress/egress rules from default SG. Doesn't manage default SG if false."
-}
-
-variable "internet_gateway_enabled" {
-  type        = bool
-  description = "A boolean flag to enable/disable Internet Gateway creation"
-  default     = true
 }
